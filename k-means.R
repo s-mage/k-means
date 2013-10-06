@@ -3,6 +3,9 @@
 # Library for 3d visualization.
 library(rgl)
 
+# Library with datasets, includes data about irises that we need.
+library(datasets)
+
 get_iris <- function() {
   data(iris)
   iris$Species <- factor(iris$Species,
